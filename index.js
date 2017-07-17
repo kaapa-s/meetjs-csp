@@ -8,20 +8,17 @@ const sha1 = require('sha1');
 const sqlite3 = require('sqlite3').verbose();
 
 
+// Uncomment the follwing code to use Content Security Policy
+// const csp = require('content-security-policy');
 
+// const cspPolicy = {
+//     'script-src' : [ csp.SRC_SELF ],
+//     'default-src' : csp.SRC_SELF,
+//     'style-src': [ csp.SRC_SELF, csp.SRC_USAFE_INLINE, 'https://fonts.googleapis.com'],
+//     'font-src': [ csp.SRC_SELF, 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'],
+// };
 
-
-
-const csp = require('content-security-policy');
-
-const cspPolicy = {
-    'script-src' : [ csp.SRC_SELF ],
-    'default-src' : csp.SRC_SELF,
-    'style-src': [ csp.SRC_SELF, csp.SRC_USAFE_INLINE, 'https://fonts.googleapis.com'],
-    'font-src': [ csp.SRC_SELF, 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'],
-};
-
-const localCSP = csp.getCSP(cspPolicy);
+//const localCSP = csp.getCSP(cspPolicy);
 
 const app = express();
 //app.use(localCSP);
