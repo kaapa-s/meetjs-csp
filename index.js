@@ -25,11 +25,6 @@ const app = express();
 
 
 
-
-
-
-
-
 const dbFile = 'csp.db';
 const exists = fs.existsSync(dbFile);
 const db = new sqlite3.Database(dbFile);

@@ -9,6 +9,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "devDependencies": {
+    "body-parser": "^1.18.1",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
@@ -25,6 +26,11 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
   },
   "dependencies": {
-    "sha1": "^1.1.1"
+    "body-parser": "^1.18.1",
+    "cookie-session": "^1.3.1",
+    "express": "^4.15.4",
+    "handlebars": "^4.0.10",
+    "sha1": "^1.1.1",
+    "sqlite3": "^3.1.11"
   }
 }
